@@ -1,0 +1,29 @@
+{
+  "version": "2.0",
+  "evaluated_at": "2026-10-03 15:49:50",
+  "n_questions": 500,
+  "n_correct": 466,
+  "accuracy": 0.932,
+  "by_subject": {
+    "computer_security": {
+      "accuracy": 0.92,
+      "correct": 92,
+      "total": 100
+    },
+    "abstract_algebra": {
+      "accuracy": 0.91,
+      "correct": 91,
+      "total": 100
+    },
+    "high_school_mathematics": {
+      "accuracy": 0.963,
+      "correct": 260,
+      "total": 270
+    },
+    "machine_learning": {
+      "accuracy": 0.7667,
+      "correct": 23,
+      "total": 30
+    }
+  }
+}

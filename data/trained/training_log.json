@@ -1,0 +1,147 @@
+[
+  {
+    "ts": "15:49:37",
+    "level": "INFO",
+    "msg": "Loading local dataset from datasets\\hh_rlhf\\train_dpo.jsonl..."
+  },
+  {
+    "ts": "15:49:37",
+    "level": "OK",
+    "msg": "HH-RLHF: loaded 3000 pairs from datasets/ folder"
+  },
+  {
+    "ts": "15:49:37",
+    "level": "INFO",
+    "msg": "Loading local dataset from datasets\\pku_saferlhf\\train_safety.jsonl..."
+  },
+  {
+    "ts": "15:49:37",
+    "level": "OK",
+    "msg": "PKU-SafeRLHF: loaded 3000 rows from datasets/ folder"
+  },
+  {
+    "ts": "15:49:37",
+    "level": "OK",
+    "msg": "AdvBench/Jailbreak: loaded 25 patterns from datasets/ folder"
+  },
+  {
+    "ts": "15:49:37",
+    "level": "INFO",
+    "msg": "Loading local dataset from datasets\\mmlu\\mmlu_eval.jsonl..."
+  },
+  {
+    "ts": "15:49:37",
+    "level": "OK",
+    "msg": "MMLU: loaded 500 questions from datasets/ folder"
+  },
+  {
+    "ts": "15:49:37",
+    "level": "OK",
+    "msg": "Phase 1 done: 3000 DPO | 3050 safety | 50 attacks | 500 MMLU"
+  },
+  {
+    "ts": "15:49:37",
+    "level": "INFO",
+    "msg": "Total: 3050 | safe: 1373 | unsafe: 1677"
+  },
+  {
+    "ts": "15:49:38",
+    "level": "INFO",
+    "msg": "Training done in 1.07s"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "Accuracy:0.8253 | F1_unsafe:0.8419 | F1_macro:0.8234 | CV:0.8198\u00b10.0301"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "OK",
+    "msg": "SLM model saved -> C:\\Users\\Admin\\Downloads\\ml mini\\guard_ai\\data\\trained\\slm_classifier.pkl"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "Sanity: 2/3 adv flagged | 3/3 benign passed"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "OK",
+    "msg": "DPO: 3000 pairs | mean_loss:0.625511 | high_quality:37"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "OK",
+    "msg": "VectorDB: 25 signatures across 8 categories saved"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "  general_harmful                13"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "  jailbreak                      4"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "  drug_synthesis                 3"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "  financial_crime                1"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "  weapons                        1"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "  violence                       1"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "  cyberattack                    1"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "  extremism                      1"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "Clause library: 37 clauses"
+  },
+  {
+    "ts": "15:49:42",
+    "level": "INFO",
+    "msg": "Running GA: 30 generations x 40 population | red:50 ben:25"
+  },
+  {
+    "ts": "15:49:50",
+    "level": "OK",
+    "msg": "GA best: fitness=0.4519 ASR=0.6800 FRR=0.0000"
+  },
+  {
+    "ts": "15:49:50",
+    "level": "OK",
+    "msg": "GA result saved -> C:\\Users\\Admin\\Downloads\\ml mini\\guard_ai\\data\\trained\\evolved_guardrail.json"
+  },
+  {
+    "ts": "15:49:50",
+    "level": "OK",
+    "msg": "MMLU Overall: 0.9320 (466/500)"
+  },
+  {
+    "ts": "15:49:50",
+    "level": "OK",
+    "msg": "Integration config -> C:\\Users\\Admin\\Downloads\\ml mini\\guard_ai\\data\\trained\\integration_config.json"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "trained_at": "2026-10-03 15:49:50",
+  "artifacts": "C:\\Users\\Admin\\Downloads\\ml mini\\guard_ai\\data\\trained",
+  "metrics": {
+    "slm_accuracy": 0.8253,
+    "slm_f1_unsafe": 0.8419,
+    "slm_cv_f1": 0.8198,
+    "dpo_pairs": 3000,
+    "dpo_mean_loss": 0.625511,
+    "vdb_signatures": 25,
+    "ga_fitness": 0.4519,
+    "ga_asr": 0.68,
+    "ga_frr": 0.0,
+    "mmlu_accuracy": 0.932
+  }
+}

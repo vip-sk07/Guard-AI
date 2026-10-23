@@ -1,0 +1,44 @@
+
+======================================================================
+GUARD AI — TRAINING REPORT
+Mepco Schlenk Engineering College - Dept. of AI & Data Science
+======================================================================
+Completed: 2026-10-03 15:49:50
+Duration:  12.9s (0.2 min)
+
+PHASE 2: SLM Safety Classifier (TF-IDF + Logistic Regression)
+  Training samples : 2592  |  Test samples: 458
+  Vocabulary       : 15000 features
+  Accuracy         : 0.8253
+  F1 UNSAFE (high) : 0.8419   <-- critical safety metric
+  F1 SAFE          : 0.8049
+  F1 Macro         : 0.8234
+  CV F1 (5-fold)   : 0.8198 +/- 0.0301
+  Saved            : C:\Users\Admin\Downloads\ml mini\guard_ai\data\trained\slm_classifier.pkl
+
+PHASE 3: DPO Preference Alignment (HH-RLHF)
+  Preference pairs : 3000  |  Beta: 0.1
+  Mean DPO loss    : 0.625511
+  High-quality     : 37 pairs (loss < 0.5)
+  Saved            : C:\Users\Admin\Downloads\ml mini\guard_ai\data\trained\dpo_preferences.json
+
+PHASE 4: Vector DB Adversarial Signatures (AdvBench + WalledAI)
+  Total signatures : 25
+  Categories       : 8
+  Saved            : C:\Users\Admin\Downloads\ml mini\guard_ai\data\trained\adversarial_vectors.json
+
+PHASE 5: Genetic Algorithm Guardrail Evolution
+  Generations run  : 11
+  Best Fitness     : 0.4519
+  Best ASR (low)   : 0.6800
+  Best FRR (low)   : 0.0000
+  Saved            : C:\Users\Admin\Downloads\ml mini\guard_ai\data\trained\evolved_guardrail.json
+
+PHASE 6: MMLU Alignment-Tax Evaluation
+  Questions        : 500
+  Accuracy         : 0.9320 (466/500)
+  Alignment Tax    : NONE - reasoning preserved
+  Saved            : C:\Users\Admin\Downloads\ml mini\guard_ai\data\trained\mmlu_alignment_tax.json
+
+All artifacts in: C:\Users\Admin\Downloads\ml mini\guard_ai\data\trained
+======================================================================
